@@ -54,7 +54,7 @@ const SeatsIOChart = () => {
           ],
           onObjectSelected: function (object) {
             console.log("Object selected:", object);
-            console.log('selectedSeats==>',selectedSeats)
+            console.log("selectedSeats==>", selectedSeats);
 
             setSelectedSeats((prevSeats) => [
               ...prevSeats,
@@ -62,7 +62,7 @@ const SeatsIOChart = () => {
                 id: object.id,
                 label: object.label || "N/A",
                 category: object?.category?.key || "N/A",
-                pricing: object?.category?.pricing?.price || "N/A", 
+                pricing: object?.category?.pricing?.price || "N/A",
               },
             ]);
           },
